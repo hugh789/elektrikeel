@@ -1,0 +1,403 @@
+@media screen and (max-width: 767px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    /* ========================================= */
+    /*            Mobile Navigation             */
+    /* ========================================= */
+
+    nav.main {
+        height: 55px;
+        padding: 0 15px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+
+    nav.main .desktop-buy-tickets,
+    nav.main .desktop-nav-links,
+    nav.main .desktop-social {
+        display: none !important;
+    }
+
+    .mobile-logo {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: 0;
+        text-decoration: none;
+    }
+    .mobile-logo img {
+         height: 30px;
+         width: auto;
+         display: block;
+    }
+
+    .burger-menu {
+        display: block;
+        pointer-events: auto;
+        padding: 8px;
+        margin: 0;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    .burger-menu span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+     .overlay-content a,
+     .overlay-content .overlay-button {
+        font-size: 2.6rem;
+        margin: 10px 0;
+     }
+      .overlay-social i {
+        font-size: 2.6rem;
+     }
+     .close-menu {
+        font-size: 4.4rem;
+        top: 10px;
+        right: 15px;
+     }
+
+    /* ========================================= */
+    /*             Mobile Header (Shared)        */
+    /* ========================================= */
+    header {
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative; 
+        overflow: hidden;
+    }
+
+    /* ========================================= */
+    /*       Mobile Header (index.html ONLY)     */
+    /* ========================================= */
+    body:not(.lineup-page) header {
+         height: 85vh;
+    }
+    body:not(.lineup-page) header .banner {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background-image: url('../images/headerbgmobile.png');
+        background-size: cover;
+        background-position: center;
+        z-index: 0; /* Ensure it's behind logo/cta */
+    }
+    body:not(.lineup-page) .logo {
+        position: absolute; 
+        z-index: 2; /* Above banner */
+        width: 85%;
+        max-width: 300px;
+        height: auto;
+        left: 50%; 
+        top: 45%;  
+        transform: translate(-50%, -50%); 
+        text-align: center;
+    }
+    body:not(.lineup-page) .logo svg#handhero {
+        position: absolute;
+        width: 180%;
+        height: auto;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        max-height: 300%;
+        pointer-events: none;
+    }
+    body:not(.lineup-page) .eelogo {
+        position: relative;
+        margin-top: 0;
+        width: 100%;
+    }
+    body:not(.lineup-page) .eelogo img {
+         width: 100%;
+         max-width: 300px;
+         height: auto;
+         margin: 0 auto 5px auto;
+         display: block; 
+    }
+    body:not(.lineup-page) .eelogo h2 {
+        font-size: 1.1em;
+        font-weight: 300;
+        margin-top: 0;
+        color: white; 
+    }
+    body:not(.lineup-page) .cta {
+        position: absolute;
+        display: block;
+        bottom: 12%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        max-width: 280px;
+        z-index: 3;
+        text-align: center; 
+    }
+    body:not(.lineup-page) .cta p {
+        margin: 0; 
+    }
+    body:not(.lineup-page) .cta .btn-grad {
+        padding: 12px 20px;
+        font-size: 1rem;
+        font-weight: 500;
+       
+    }
+
+    /* ========================================= */
+    /*      Mobile Header (lineup.html ONLY)     */
+    /* ========================================= */
+    body.lineup-page header {
+        min-height: 75vh;
+    }
+    body.lineup-page .hero-background { 
+        position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        background-image: url('../images/lineupbg.gif');
+        background-size: cover; background-position: center; z-index: 0;
+    }
+     body.lineup-page .hero-overlay { 
+        position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+        background-color: rgba(0, 0, 0, 0.55); z-index: 1; pointer-events: none;
+    }
+    body.lineup-page .hero-content {
+        padding: 20px;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        gap: 40px;
+        width: 100%;
+        position: relative; 
+        z-index: 2; 
+    }
+    body.lineup-page .hero-title-svg {
+        width: 85%;
+        max-width: 450px;
+        margin: 0 auto; 
+        display: block;
+        height: auto;
+    }
+    body.lineup-page .cta {
+        position: static;
+        transform: none;
+        display: block;
+        width: auto;
+        max-width: none;
+        bottom: auto;
+        left: auto;
+        margin-top: 0;
+        text-align: center; 
+    }
+     body.lineup-page .cta p {
+        margin: 0;
+        line-height: 1;
+    }
+    body.lineup-page .cta .btn-grad {
+        padding: 12px 25px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+
+    /* ========================================= */
+    /*       Section 2: About (#info.about)      */
+    /* ========================================= */
+
+    #info.about .about-content { padding-top: 70%; }
+     .icon-hand { width: 180px; top: 18%; }
+     .icon-sun { width: 40px; top: 22%; left: 15%; }
+     .icon-star { width: 30px; top: 32%; right: 15%; }
+     .about .text-container h2 { font-size: 1.6rem; margin-bottom: 0.6em;}
+     .about .text-container p { font-size: 1rem; margin-bottom: 0.4em;}
+     #info.about .text-container h2 { font-size: 1.6rem; margin-bottom: 0.6em;}
+     #info.about .text-container p { font-size: 1rem; margin-bottom: 0.4em;}
+     .about .newsletter-form { margin-top: 40px; }
+     .about .newsletter-form h3 { font-size: 1.4rem; margin-bottom: 0.8em; }
+     .about .newsletter-form p { font-size: 0.95rem; margin-bottom: 1.5em; }
+     .about .form-row { flex-direction: column; gap: 8px; max-width: 90%;}
+     .about #newsletter-email { min-width: initial; width: 100%; }
+     .about .btn-subscribe { width: 100%; }
+      #info.about .icon-hand { width: 180px; top: 18%; }
+     #info.about .icon-sun { width: 40px; top: 22%; left: 15%; }
+     #info.about .icon-star { width: 30px; top: 32%; right: 15%; }
+     #info.about .newsletter-form { margin-top: 40px; }
+     #info.about .newsletter-form p { font-size: 0.95rem; margin-bottom: 1.5em; }
+     #info.about .newsletter-form h3 { font-size: 1.4rem; margin-bottom: 0.8em; }
+     #info.about #newsletter-email { min-width: initial; width: 100%; }
+     #info.about .form-row { flex-direction: column; gap: 8px; max-width: 90%;}
+     #info.about .btn-subscribe { width: 100%; }
+
+    /* ========================================= */
+    /*             Sections 3, 4, 5              */
+    /* ========================================= */
+
+     .articles {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
+        max-width: 95%;
+    }
+     .latestnews { max-width: 250px; margin-bottom: 30px; }
+     .articles article h2 { font-size: 1.1em; margin: 15px 15px 5px 15px; }
+     .divider { margin: 8px auto; }
+     .articles article p { font-size: 0.9em; padding: 0 15px 15px 15px;}
+     .latestnews img {
+        height: 50px;
+        margin-bottom: 15px;
+    }
+    .article-img { aspect-ratio: 16 / 9; }
+
+    .about2 {
+        background-color: #0a0a0a; 
+        padding: 50px 20px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+      
+      .about2 .banner3 {
+        max-width: 280px;
+        margin: 0 auto 35px auto;
+      }
+      
+      .about2 .banner3 img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .about2 .text-container {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 0;
+      }
+      
+      .about2 .text-container h2 {
+        font-size: 2rem;          
+        font-weight: 600;
+        line-height: 1.3;
+        margin-bottom: 1em;
+        letter-spacing: -0.032rem;
+        color: #fff;
+      }
+      
+      .about2 .text-container h2 strong {
+        background: linear-gradient(45deg, #8a2be2, #ff4500);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+      }
+      
+      
+      .about2 .text-container p {
+        font-size: 1.125rem;
+        line-height: 1.7;
+        margin-bottom: 1em;
+        color: #e0e0e0;
+        letter-spacing: normal;
+      }
+      
+
+     .lineup-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px 15px; 
+        margin: 0 auto 20px auto; 
+        max-width: 95%;
+    }
+     .artist-card h3 {
+        min-height: 40px;
+        font-size: 1.5em;
+     }
+     .flip-card-back h2 { font-size: 1em; }
+     .flip-card-back p { font-size: 0.85em; line-height: 1.4; }
+     .flip-card-back .socialicons a i { font-size: 1.2em; }
+
+
+    /* ========================================= */
+    /*                 Footer                    */
+    /* ========================================= */
+
+    footer {
+        min-height: auto;
+        padding: 30px 15px 20px 15px;
+    }
+    .newsletter-section {
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 30px;
+    }
+    .newsletter-graphic { width: 35px; }
+    .newsletter-section .btn-grad { font-size: 1rem; padding: 12px 25px;}
+
+    .footer-links-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+    .footer-links-column {
+        margin: 0;
+        text-align: center;
+    }
+     .footer-links-column li { font-size: 1.1em; margin-bottom: 12px; }
+
+    .inner-footer {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+        padding: 15px 0;
+        max-width: 100%;
+        margin-top: 15px;
+    }
+    .inner-footer .left, .inner-footer .right {
+        text-align: center;
+        padding: 0;
+        justify-content: center;
+    }
+    .inner-footer .right { gap: 15px; }
+    .inner-footer .right i {
+        font-size: 1.6em;
+    }
+    .footer-overlay { display: none; }
+
+
+    /* ========================================= */
+    /* START OF mobile.css index.html SPECIFIC STYLES   
+    /* ========================================= */
+
+    #artists .images {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px 10px;
+        max-width: 320px;
+    }
+
+    #artists .image {
+        margin-bottom: 15px;
+        padding: 8px;
+    }
+
+    #artists .image p {
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    #artists .artisttitle img {
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+} 

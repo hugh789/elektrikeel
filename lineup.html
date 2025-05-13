@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Elektrik Eel - Festival</title>
+      <!-- Preconnects -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <script src="https://kit.fontawesome.com/25ed1e2b39.js" crossorigin="anonymous"></script>
+
+      <!-- Custom Styles -->
+      <link rel="stylesheet" href="css/desktop.css">
+      <link rel="stylesheet" href="css/tablet.css" media="screen and (max-width: 1024px)">
+      <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+
+      <!-- Javascript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    </head>
+    <body>
+          <header>
+            <nav class="main">
+                <!-- Logo FOR MOBILE/TABLET ONLY -->
+                <a href="#top" class="mobile-logo">
+                    <img src="images/eelogo.svg" alt="Elektrik Eel festival logo">
+                </a>
+            
+                <!-- Desktop "Buy Tickets" Button (Hidden on mobile/tablet) -->
+                <p class="desktop-buy-tickets"><a href="#" class="btn-grad1">Buy Tickets</a></p>
+            
+                <!-- Desktop Nav Links (Hidden on mobile/tablet) -->
+                <div class="nav-links desktop-nav-links">
+                    <a href="index.html#top">Home</a>
+                    <a href="#top">Tickets</a>
+                    <a href="#lineup.html">Lineup</a>
+                    <a href="index.html#info">Event Info</a>
+                    <a href="#footer">FAQ</a>
+                </div>
+            
+                <!-- Desktop Social Icons (Hidden on mobile/tablet) -->
+                <div class="social desktop-social">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            
+                <!-- Burger Menu Button (Hidden on desktop) -->
+                <button class="burger-menu" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+            
+            <!-- == Full Screen Overlay Menu (Initially Hidden) == -->
+            <div class="overlay-menu" id="overlayMenu">
+                <button class="close-menu" aria-label="Close menu">×</button>
+                <div class="overlay-content">
+                    <a href="#top">Home</a>
+                    <a href="#top">Tickets</a>
+                    <a href="#artists">Lineup</a>
+                    <a href="#info">Event Info</a>
+                    <a href="#footer">FAQ</a>
+                    <p><a href="#" class="btn-grad1 overlay-button">Buy Tickets</a></p>
+                    <div class="social overlay-social">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="Spotify"><i class="fa-brands fa-spotify"></i></a>
+                        <a href="#" aria-label="Apple Music"><i class="fa-brands fa-apple"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- == End Overlay Menu == -->
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+             <img src="images/lineuptitle.svg" alt="Lineup" class="hero-title-svg">
+        </div>
+          </header>
+
+          <main> 
+
+            <!-- Section 2: Artists -->
+
+            <div class="lineup-grid">
+                <!-- Artist 1: Magdalena Bay -->
+                <div class="artist-card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <picture>
+                                    <img src="images/lineup/thumbs/MB_0_1.5x.jpg" alt="Magdalena Bay">
+                                </picture>
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Magdalena Bay</h2>
+                                <p>Synth-pop duo Magdalena Bay return with dazzling precision, serving up a neon-lit spectacle ahead of their upcoming tour. With their surreal visuals and addictive melodies, fans are in for an immersive live experience like no other.</p>
+                                <!-- Social Icons START -->
+                                <div class="socialicons">
+                                    <a href="#" aria-label="Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                                    <a href="#" aria-label="Apple Music" target="_blank"><i class="fa-brands fa-apple"></i></a>
+                                    <a href="#" aria-label="Soundcloud" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
+                                    <a href="#" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" aria-label="X Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                </div>
+                                <!-- Social Icons END -->
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Magdalena Bay</h3>
+                </div>
+            
+                <!-- Artist 2: Charli XCX -->
+                <div class="artist-card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <picture>
+                                    <img src="images/lineup/thumbs/CX_0_1.5x.jpg" alt="Charli XCX">
+                                </picture>
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Charli XCX</h2>
+                                <p>Pop maverick Charli XCX is revving up for her next era with a brand new album that promises chaos, euphoria, and razor-sharp hooks. The future of pop is in safe hands — and it’s speeding toward us.</p>
+                                <!-- Social Icons START -->
+                                <div class="socialicons">
+                                    <a href="#" aria-label="Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                                    <a href="#" aria-label="Apple Music" target="_blank"><i class="fa-brands fa-apple"></i></a>
+                                    <a href="#" aria-label="Soundcloud" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
+                                    <a href="#" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" aria-label="X Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                </div>
+                                <!-- Social Icons END -->
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Charli XCX</h3>
+                </div>
+            
+                <!-- Artist 3: Panda Bear -->
+                <div class="artist-card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <picture>
+                                    <img src="images/lineup/thumbs/PB_0_1.5x.jpg" alt="Panda Bear">
+                                </picture>
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Panda Bear</h2>
+                                <p>Back with another lush, layered release, Panda Bear invites listeners into a hazy dreamworld of sound. With a new collaborative project on the way, fans can expect more mind-bending textures soon.</p>
+                                <!-- Social Icons START -->
+                                <div class="socialicons">
+                                    <a href="#" aria-label="Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                                    <a href="#" aria-label="Apple Music" target="_blank"><i class="fa-brands fa-apple"></i></a>
+                                    <a href="#" aria-label="Soundcloud" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
+                                    <a href="#" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" aria-label="X Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                </div>
+                                <!-- Social Icons END -->
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Panda Bear</h3>
+                </div>
+            
+                <!-- Artist 4: CHVRCHES -->
+                <div class="artist-card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <picture>
+                                    <img src="images/lineup/thumbs/C_0_1.5x.jpg" alt="CHVRCHES">
+                                </picture>
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>CHVRCHES</h2>
+                                <p>Beloved synth-pop trio CHVRCHES are hitting the road once more, bringing their cinematic sound and emotional punch to stages worldwide. As always, their live show promises pure catharsis under neon lights.</p>
+                                <!-- Social Icons START -->
+                                <div class="socialicons">
+                                    <a href="#" aria-label="Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                                    <a href="#" aria-label="Apple Music" target="_blank"><i class="fa-brands fa-apple"></i></a>
+                                    <a href="#" aria-label="Soundcloud" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
+                                    <a href="#" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" aria-label="X Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                </div>
+                                <!-- Social Icons END -->
+                            </div>
+                        </div>
+                    </div>
+                    <h3>CHVRCHES</h3>
+                </div>
+            
+                <!-- Artist 5: Grimes -->
+                <div class="artist-card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <picture>
+                                    <img src="images/lineup/thumbs/G_05_1.5x.jpg" alt="Grimes">
+                                </picture>
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Grimes</h2>
+                                <p>Grimes returns with a bold and enigmatic new album, weaving AI fantasy with raw emotion. As always, the sonic shapeshifter refuses to play by the rules — and the results are thrilling.</p>
+                                <!-- Social Icons START -->
+                                <div class="socialicons">
+                                    <a href="#" aria-label="Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                                    <a href="#" aria-label="Apple Music" target="_blank"><i class="fa-brands fa-apple"></i></a>
+                                    <a href="#" aria-label="Soundcloud" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
+                                    <a href="#" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" aria-label="X Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                </div>
+                                <!-- Social Icons END -->
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Grimes</h3>
+                </div>
+            
+                <!-- Artist 6: Tove Lo -->
+                <div class="artist-card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <picture>
+                                    <img src="images/lineup/thumbs/TL_0_1.5x.jpg" alt="Tove Lo">
+                                </picture>
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Tove Lo</h2>
+                                <p>The queen of sad bangers, Tove Lo is back with a fire new track dripping in heat and heartbreak. With her signature blend of grit and glitter, she proves once again why she’s one of pop’s most fearless voices.</p>
+                                <!-- Social Icons START -->
+                                <div class="socialicons">
+                                    <a href="#" aria-label="Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                                    <a href="#" aria-label="Apple Music" target="_blank"><i class="fa-brands fa-apple"></i></a>
+                                    <a href="#" aria-label="Soundcloud" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
+                                    <a href="#" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" aria-label="X Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                </div>
+                                <!-- Social Icons END -->
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Tove Lo</h3>
+                </div>
+            
+                <!-- Artist 7: Caroline Polachek -->
+                <div class="artist-card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <picture>
+                                    <img src="images/lineup/thumbs/CP_0_1.5.jpg" alt="Caroline Polachek">
+                                </picture>
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Caroline Polachek</h2>
+                                <p>Caroline Polachek unveils her most ambitious album yet, a sweeping and operatic journey through art-pop bliss. Fans can dive deep into the soundscape and lose themselves in her ever-expanding universe.</p>
+                                <!-- Social Icons START -->
+                                <div class="socialicons">
+                                    <a href="#" aria-label="Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                                    <a href="#" aria-label="Apple Music" target="_blank"><i class="fa-brands fa-apple"></i></a>
+                                    <a href="#" aria-label="Soundcloud" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
+                                    <a href="#" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" aria-label="X Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                </div>
+                                <!-- Social Icons END -->
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Caroline Polachek</h3>
+                </div>
+            
+                <!-- Artist 8: Brooke Candy -->
+                <div class="artist-card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <picture>
+                                    <img src="images/lineup/thumbs/BC_0_1.5x.jpg" alt="Brooke Candy">
+                                </picture>
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Brooke Candy</h2>
+                                <p>Brooke Candy storms back onto stages worldwide with a high-voltage tour that blends fashion, fire, and fierce energy. Don’t miss your chance to witness the uncensored spectacle in the flesh.</p>
+                                <!-- Social Icons START -->
+                                <div class="socialicons">
+                                    <a href="#" aria-label="Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                                    <a href="#" aria-label="Apple Music" target="_blank"><i class="fa-brands fa-apple"></i></a>
+                                    <a href="#" aria-label="Soundcloud" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
+                                    <a href="#" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" aria-label="X Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                </div>
+                                <!-- Social Icons END -->
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Brooke Candy</h3>
+                </div>
+            
+                <!-- Artist 9: Ashnikko -->
+                <div class="artist-card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <picture>
+                                    <img src="images/lineup/thumbs/A_0_1.5x.jpg" alt="Ashnikko">
+                                </picture>
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Ashnikko</h2>
+                                <p>Ashnikko blasts into a wild new era with a genre-melting album that’s equal parts riot and ritual. With sci-fi aesthetics and lyrical bite, she’s building a world that’s all her own.</p>
+                                <!-- Social Icons START -->
+                                <div class="socialicons">
+                                    <a href="#" aria-label="Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                                    <a href="#" aria-label="Apple Music" target="_blank"><i class="fa-brands fa-apple"></i></a>
+                                    <a href="#" aria-label="Soundcloud" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
+                                    <a href="#" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" aria-label="X Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                </div>
+                                <!-- Social Icons END -->
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Ashnikko</h3>
+                </div>
+            
+                <!-- Artist 10: Shygirl -->
+                <div class="artist-card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <picture>
+                                    <img src="images/lineup/thumbs/SG_0_1.5x.jpg" alt="Shygirl">
+                                </picture>
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>Shygirl</h2>
+                                <p>Shygirl returns with a sleek and genre-blurring new single that pulses with underground energy. As anticipation builds for her next release, she continues to redefine the sound of UK club culture.</p>
+                                <!-- Social Icons START -->
+                                <div class="socialicons">
+                                    <a href="#" aria-label="Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                                    <a href="#" aria-label="Apple Music" target="_blank"><i class="fa-brands fa-apple"></i></a>
+                                    <a href="#" aria-label="Soundcloud" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
+                                    <a href="#" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" aria-label="X Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                </div>
+                                <!-- Social Icons END -->
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Shygirl</h3>
+                </div>
+            
+                <!-- Artist 11: 070 Shake -->
+                <div class="artist-card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <picture>
+                                    <img src="images/lineup/thumbs/S_0_1.5x.jpg" alt="070 Shake">
+                                </picture>
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>070 Shake</h2>
+                                <p>Back on tour and stronger than ever, 070 Shake brings her dark, hypnotic energy to life on stage. With emotion running deep and beats that hit hard, every show is a moment you’ll feel in your bones.</p>
+                                <!-- Social Icons START -->
+                                <div class="socialicons">
+                                    <a href="#" aria-label="Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                                    <a href="#" aria-label="Apple Music" target="_blank"><i class="fa-brands fa-apple"></i></a>
+                                    <a href="#" aria-label="Soundcloud" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
+                                    <a href="#" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" aria-label="X Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                </div>
+                                <!-- Social Icons END -->
+                            </div>
+                        </div>
+                    </div>
+                    <h3>070 Shake</h3>
+                </div>
+            
+                <!-- Artist 12: FKA twigs -->
+                <div class="artist-card">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <picture>
+                                    <img src="images/lineup/thumbs/FT_0_1.5x.jpg" alt="FKA twigs">
+                                </picture>
+                            </div>
+                            <div class="flip-card-back">
+                                <h2>FKA twigs</h2>
+                                <p>FKA twigs reveals a new sonic chapter with her latest release — a haunting blend of movement, music, and myth. As always, she dances on the edge of genre and feeling, leaving audiences spellbound.</p>
+                                <!-- Social Icons START -->
+                                <div class="socialicons">
+                                    <a href="#" aria-label="Spotify" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+                                    <a href="#" aria-label="Apple Music" target="_blank"><i class="fa-brands fa-apple"></i></a>
+                                    <a href="#" aria-label="Soundcloud" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
+                                    <a href="#" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="#" aria-label="X Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                </div>
+                                <!-- Social Icons END -->
+                            </div>
+                        </div>
+                    </div>
+                    <h3>FKA twigs</h3>
+                </div>
+            
+            </div>
+
+              <!-- Section 3: News -->
+
+              <div class="bg-section-5">
+                <div class="section-content">
+                  <div class="articles-main">
+                    <div class="latestnews">
+                      <img src="images/latestnews.png" alt="LATEST NEWS">
+                    </div>
+                        <div class="articles">
+
+                          <article>
+                            <div class="article-img">
+                              <img src="images/articles/article01.jpg" alt="Silhouetted figures ascending stairs in a moody, red-lit venue corridor">
+                            </div>
+                            <h2>Robert Hood Returns with New Track 'Art Form'</h2>
+                            <hr class="divider">
+                            <p>Detroit techno pioneer Robert Hood has released his first solo track of 2025, titled "Art Form," on his M-Plant label. This energetic and driving piece showcases Hood's signature minimalist style and is available now.</p>
+                          </article>
+                          <article>
+                            <div class="article-img">
+                              <img src="images/articles/article02.jpg" alt="Dark industrial-style hallway bathed in atmospheric red and blue light">
+                            </div>
+                            <h2>Surgeon Announces Upcoming Album 'Shell~Wave'</h2>
+                            <hr class="divider">
+                            <p>UK techno artist Surgeon is set to release his new album, "Shell~Wave," on May 2nd via Tresor. This nine-track LP reflects his deep connection with techno and follows his acclaimed 2023 album, "Crash Recoil".</p>
+                          </article>
+                          <article>
+                            <div class="article-img">
+                              <img src="images/articles/article03.jpg" alt="Crowd dancing in a dark club illuminated by intense red stage lights">
+                            </div>
+                            <h2>Oscar Mulero Resumes Performances After Health Hiatus</h2>
+                            <hr class="divider">
+                            <p>Spanish techno legend Oscar Mulero has returned to the stage following a health-related tour cancellation last year. He is scheduled to perform at FOLD in London on May 30th, marking his comeback to live performances.</p>
+                          </article>
+                        </div>
+                      </div>
+                </div>
+              </div>
+                        <!-- Section 5: Promotion Copy -->
+
+                        <div class="bg-section-5">
+                            <div class="about2">
+                                <div class="banner3">
+                                    <img src="images/atechnocommunion.png" alt="A TECHNO COMMUNION">
+                                </div>
+                                <div class="text-container">
+                                    <h2>No <strong>Cameras</strong>.<br> No <strong>Distractions</strong>.<br> Just <strong>Energy</strong>.</h2>
+                                    <p>A place to move, to feel, to immerse.</p>
+                                    <p>Built for connection - artist to crowd, beat to body.</p>
+                                    <p>Location in the cultural hub of Naarm/Melbourne, Collingwood, on Smith St.</p>
+                                </div>
+                            </div>
+                        </div>
+          </main>
+
+      
+            <!-- Footer  -->
+
+      <footer>
+
+        <img src="images/starfooter.svg" alt="" class="footer-overlay footer-star star-1">
+        <img src="images/starfooter.svg" alt="" class="footer-overlay footer-star star-3">
+        <img src="images/starfooter.svg" alt="" class="footer-overlay footer-star star-4">
+
+
+    
+        <div class="newsletter-section">
+          <p><a href="#" class="btn-grad">JOIN THE NEWSLETTER</a></p>
+          <img src="images/starfooter.svg" alt="" class="newsletter-graphic newsletter-star">
+      </div>
+  
+      <!-- Link Columns Container -->
+
+      <div id="footer" class="footer-links-container">
+          <ul class="footer-links-column">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Venue</a></li>
+              <li><a href="#">Volunteer</a></li>
+           
+          </ul>
+          <ul class="footer-links-column">
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li> 
+        
+          </ul>
+      </div>
+  
+      <!-- Bottom Row: Copyright + Social -->
+      <div class="inner-footer">
+          <div class="left">
+              <p>© Copyright 2025 Electrik Eel</p>
+          </div>
+          <div class="right">
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+      </div>
+    </footer>
+    <script src="javascript/burgermenu.js"></script>
+</body>
+</html>
